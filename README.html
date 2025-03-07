@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shipment Management Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Shipment Management Form</h2>
+        <form id="shipmentForm" method="get">
+            <div class="form-group">
+                <label for="shipmentNo">Shipment No.:</label>
+                <input type="number" class="form-control" id="shipmentNo" onchange="getshipment()">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" class="form-control" id="description">
+            </div>
+
+            <div class="form-group">
+                <label for="source">Source:</label>
+                <input type="text" class="form-control" id="source">
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" class="form-control" id="destination">
+            </div>
+
+            <div class="form-group">
+                <label for="shippingDate">Shipping Date:</label>
+                <input type="date" class="form-control" id="shippingDate">
+            </div>
+
+            <div class="form-group">
+                <label for="expectedDeliveryDate">Expected Delivery Date:</label>
+                <input type="date" class="form-control" id="expectedDeliveryDate">
+            </div>
+
+            <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveShipment()" disabled>Save</button>
+            <button type="button" class="btn btn-lg btn-primary" id="update" onclick="updateShipment()" disabled>Update</button>
+            <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()"disabled>Reset</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/JPDBObject.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+ </body>
+</html>
